@@ -63,6 +63,51 @@ codesandbox 원본 주소: https://codesandbox.io/s/class06-vg1ugv
     '1' + 1 = '11'
     ```
     ** Javascript는 데이터 타입을 엄격하게 구분하지 않음
+   - 변수(variable)
+      - 데이터를 저장하는 공간
+      - 변수는 선언(declaration), 정의(definition)를 한 이후에 사용해야 함
+      - 변수 선언 예약어(키워드)
+         - var (ES5) : 타입 구분 안함, 데이터 변경 자유로움
+         - let (ES6) : 타입 구분 안함, 데이터 변경 자유로움
+         - const (ES6) : 타입 구분 안함, 데이터 변경 불가능
+      ```
+      JAVA
+      정수 변수 선언 : int number1;
+      실수 변수 선언 : float number2;
+      문자 변수 선언 : char text;
+
+      ES5/ES6
+      정수 변수 선언 : var number1; | let number1; | const number1;
+      실수 변수 선언 : var number2; | let number2; | const number2;
+      문자 변수 선언 : var text;    | let text;    | const text;
+      ```
+   - 연산자(Operators)
+      _ 산술 연산자: Arithmetic Operators
+         - +, *, -, /
+         - % : 나머지 연산
+      - 할당(대입) 연산자: Assignment Operators
+         - = : 값을 변수에 저장
+         ```
+         const PI = 3.141592;
+         ```
+         - 산술 + 대입연산자 (재귀)
+         ```
+         let a=10;
+         a=a+5
+         a += 5 축약
+         ```
+         ** 산술 + 대입 연산이 반복 실행되면 일정 값을 지속적으로 연산
+         - 카운터
+         ```
+         a += 1 => a++
+         a -= 1 => a--
+         ```
+      - 비교 연산자: Comparision Operators
+        ```
+        같음 '1' == 1 : yes | '1' === 1 : no
+        다름 != not equal   | !== not equal value and type
+        ```
+        - 비교 연산자를 사용한 식의 결과는 True/False
 
   ### 명령문
   ### 함수
