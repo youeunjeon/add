@@ -116,10 +116,23 @@
 #### table(표)
 
 #### hyper link(하이퍼링크)
+#### hyper link(하이퍼링크)
+-a(anchor)
+  - 기본속성 : href(hypertext reference):연결할 위치(페이지)
+  - 뇌부링크
+  - 내부링크 : 북마크
 
 ### Media
 
 #### image(이미지)
+- img(image)
+  - 시작태그만 있음
+- 기본속성
+  - src(source): 이미지 파일 이름, 위치
+  - alt(alternate text): 대체 텍스트-이미지가 화면에 표시되지 않을때, screen reader
+  ```
+  <img src="photo.jpg" alt="사진">
+  ```
 
 #### video(영상)
 
