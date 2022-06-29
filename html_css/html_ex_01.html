@@ -12,6 +12,102 @@
       This paragraph contains &nbsp;a lot of lines in the source code, but the
       browser ignores &nbsp;it.
     </p>
+    <input
+      type="button"
+      value="night"
+      onclick="
+      document.querySelector('body').style.background='black';
+      document.querySelector('body').style.color='pink';
+     
+      
+      "
+    />
+    <input
+      type="button"
+      value="day"
+      onclick="document.querySelector('body').style.background='coral';
+      document.querySelector('body').style.color='yellow';
+      "
+    />
+    <input
+      type="button"
+      id="night_day"
+      value="day"
+      onclick="
+      if(document.querySelector('#night_day').value==='night'){
+        document.querySelector('body').style.background='coral';
+        document.querySelector('body').style.color='yellow';
+        document.querySelector('#night_day').value='day';
+      }
+      else{
+        document.querySelector('body').style.background='black';
+        document.querySelector('body').style.color='pink';
+        document.querySelector('#night_day').value='night';
+      }
+      "
+    />
+    <input
+      type="button"
+      value="day"
+      onclick="
+      var target = document.querySelector('body');
+      if(this.value==='night'){
+        target.style.background='coral';
+        target.style.color='yellow';
+        this.value='day';
+      }
+      else{
+        target.style.background='green';
+        target.style.color='pink';
+        this.value='night';
+      }
+      "
+    />
+    <p>1===1</p>
+    <script>
+      document.write(1 === 1);
+    </script>
+
+    <p>1===2</p>
+    <script>
+      document.write(1 === 2);
+    </script>
+
+    <p>1&lt;===2</p>
+    <script>
+      document.write(1 < 2);
+    </script>
+
+    <p>1&gt;===2</p>
+    <script>
+      document.write(1 > 2);
+    </script>
+
+    <input
+      type="button"
+      value="day"
+      onclick="
+    if(this.value==='night'){
+      document.querySelector('body').style.background='coral';
+      document.querySelector('body').style.color='yellow';
+      this.value='day';
+    }
+    else{
+      document.querySelector('body').style.background='black';
+      document.querySelector('body').style.color='pink';
+      this.value='night';
+    }
+    "
+    />
+
+    <h2>Syntax</h2>
+    <script>
+      var coworker = ["youeun", "egoing", "jjong", "parang"];
+    </script>
+    <script>
+      document.write(coworker[3]);
+      document.write(coworker.length);
+    </script>
   </body>
 </html>
 
